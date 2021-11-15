@@ -2,31 +2,80 @@
 //  PalindromeFinder.cpp
 //  
 
+#include <set>
 #include "PalindromeFinder.hpp"
 
 //TO DO
 
 
 bool PalindromeFinder::allUnique(string str) const {
-    return false;
+    std::set<std::string> strings;
+    std::string temp;
+    for (char c : str) {
+        if (isspace(c)) {
+            temp = processString(temp);
+            if (strings.count(temp)) {
+                return false;
+            } else {
+                strings.insert(temp);
+            }
+            temp = "";
+        } else {
+            temp += c;
+        }
+    }
+    if (!temp.empty()) {
+        temp = processString(temp);
+        if (strings.count(temp)) {
+            return false;
+        }
+    }
+    return true;
 }
 
 string PalindromeFinder::processString(string str) const {
-    return std::string();
+    std::string result;
+    for (char c: str) {
+        if (isalpha(c)) {
+            result += tolower(c);
+        }
+    }
+    return result;
 }
 
 bool PalindromeFinder::isPalindrome(string str) const {
-    return false;
+    std::string processed = processString(str);
+    if (processed.size() == 1 || processed.size() == 0) {
+        return true;
+    }
+    return checkPalindromeRec(processed, 0, processed.size() - 1);
 }
 
 bool PalindromeFinder::checkPalindrome(string str) const {
-    return false;
+    Deque<char> dq;
+    std::string processed = processString(str);
+    for (char c : processed) {
+        dq.pushBack(c);
+    }
+    while (!dq.isEmpty()) {
+        if (dq.front() != dq.back()) {
+            return false;
+        }
+        dq.popFront();
+        dq.popBack();
+    }
+    return true;
 }
 
 string PalindromeFinder::printResult(string str, string result) const {
-    return std::string();
+    return "\"" + str + "\" " + result;
 }
 
 bool PalindromeFinder::checkPalindromeRec(string str, int start, int end) const {
-    return false;
+    if (start == end) {
+        return true;
+    } else if (start == end - 1) {
+        return str.at(start) == str.at(end);
+    }
+    return (str.at(start) == str.at(end)) && checkPalindromeRec(str, start + 1, end - 1);
 }

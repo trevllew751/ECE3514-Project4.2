@@ -66,10 +66,6 @@ public:
    */
   T back() const;
 
-  /** overloaded swap for copy-swap idiom
-   */
-  void swap(Deque<T>& x, Deque<T>& y);
-
   template <typename U>
   friend std::ostream& operator<<(std::ostream& os, const Deque<U>& d);
 };
