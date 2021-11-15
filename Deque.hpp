@@ -7,24 +7,36 @@
 
 #include "abstract_deque.hpp"
 
+#define INITIAL_CAPACITY 64
+
 template <typename T>
 class Deque: public AbstractDeque<T>
 {
 private:
-  T * deque;
-  std::size_t N; //max number of elements the deque can store
-  std::size_t F; //(F+1)%(N+1) is the front of the deque
-  std::size_t B; //B is the back of the deque
+    std::size_t frontIndex;
+    std::size_t rearIndex;
+    std::size_t size;
+    std::size_t capacity;
+    T* items;
 
-  //double the size of the existing queue
-  void grow();
+    /**
+     * Resizes the items array to capacity * 2 + 1
+     */
+    void resize();
+
+    /**
+     * Swaps the items of each Deque
+     * @param lhs left Deque
+     * @param rhs right Deque
+     */
+    void swap(Deque &lhs, Deque&rhs);
  
 public:
   /** Deque constructor */
   Deque();
 
   /** Copy Constructor */ 
-  Deque(const Deque& rhs );
+  Deque(const Deque& other );
   
   /** Copy assignment operator */
   Deque& operator=(Deque rhs);
