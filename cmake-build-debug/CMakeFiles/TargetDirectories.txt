@@ -1,0 +1,6 @@
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/cmake-build-debug/CMakeFiles/student-tests.dir
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/cmake-build-debug/CMakeFiles/finder.dir
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/cmake-build-debug/CMakeFiles/submission.dir
