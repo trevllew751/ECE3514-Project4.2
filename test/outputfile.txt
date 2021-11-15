@@ -1,0 +1,56 @@
+Anna
+"Anna" is a Palindrome!
+
+Kayak
+"Kayak" is a Palindrome!
+
+Mom
+"Mom" is a Palindrome!
+
+Taco cat
+"Taco cat" is a Palindrome!
+
+Olivia aivilo!
+"Olivia alivilo" is a Palindrome!
+
+Abc you me too
+"Abc you me too" is not a Palindrome!
+
+123 abc
+"123 abc" is not a Palindrome!
+
+Madam
+"Madam" is a Palindrome!
+
+UFO tofu? 
+"UFO tofu?" is a Palindrome!
+
+Xyz, sis, zyx,
+"Xyz, sis, pyx," is a Palindrome!
+
+A nut for a jar of tuna.
+"A nut for a jar of tuna." is a Palindrome!
+
+"Stella"
+""Stella"" is not a Palindrome!
+
+Amore, Roma!
+"Amore, Roma!" is a Palindrome!
+
+Wow 2021 Wow!!!
+"Wow 2021 Wow!!!" has non-unique word(s)!
+
+'Was it a car or a cat I saw?'
+"'Was it a car or a cat I saw?'" is a Palindrome!
+
+1-2-3-4-4-3-2-1
+"1-2-3-4-4-3-2-1" is a Palindrome!
+
+A
+"A" is a Palindrome!
+
+Racecar
+"Racecar" is a Palindrome!
+
+SAIPPUAKIVIKAUPPIAS
+"SAIPPUAKIVIKAUPPIAS" is a Palindrome!
