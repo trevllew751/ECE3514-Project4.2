@@ -8,8 +8,8 @@ TEST_CASE( "Test allUnique method", "[PalindromeFinder]" )
 
     REQUIRE(f.allUnique("Hello world"));
     REQUIRE(f.allUnique("1Hel3lo wo13!rld"));
-    REQUIRE_FALSE(f.allUnique("12321 12321"));
-    REQUIRE_FALSE(f.allUnique("12321 312"));
+    REQUIRE(f.allUnique("12321 12321"));
+    REQUIRE(f.allUnique("12321 312"));
     REQUIRE_FALSE(f.allUnique("HELLO hello"));
     REQUIRE_FALSE(f.allUnique("HELLO124 78643782hello"));
     REQUIRE_FALSE(f.allUnique("Wow 2021 Wow!!! 2022"));
@@ -21,6 +21,9 @@ TEST_CASE("Test processString", "[PalindromeFinder]") {
     REQUIRE(f.processString("PR0c3s5") == "prcs");
     REQUIRE(f.processString("Hello world") == "helloworld");
     REQUIRE(f.processString("213_! &$&#@^").empty());
+    REQUIRE(f.processString("hello h3ello") == "duplicated");
+    REQUIRE(f.processString("a a bb a") == "aabba");
+    REQUIRE(f.processString("aa aa bb a") == "duplicated");
 }
 
 TEST_CASE("Test isPalindrome", "[PalindromeFinder]") {
