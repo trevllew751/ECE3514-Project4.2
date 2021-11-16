@@ -62,6 +62,9 @@ bool PalindromeFinder::checkPalindrome(string str) const {
             return false;
         }
         dq.popFront();
+        if (dq.isEmpty()) {
+            break;
+        }
         dq.popBack();
     }
     return true;

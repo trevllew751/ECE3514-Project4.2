@@ -39,3 +39,21 @@ TEST_CASE("Test isPalindrome", "[PalindromeFinder]") {
     REQUIRE(f.isPalindrome("Xyz, sis, zyx,"));
     REQUIRE(f.isPalindrome("Amore, Roma!"));
 }
+
+TEST_CASE("test checkPalindrome", "[PalindromeFinder]") {
+    PalindromeFinder f;
+    REQUIRE(f.checkPalindrome("Taco cat"));
+    REQUIRE(f.checkPalindrome("ABBA"));
+    REQUIRE_FALSE(f.checkPalindrome("ABAB"));
+    REQUIRE(f.checkPalindrome("he3l1l1o0 olleh"));
+    REQUIRE(f.checkPalindrome("ABABA"));
+    REQUIRE(f.checkPalindrome("'Was it a car or a cat I saw?'"));
+    REQUIRE(f.checkPalindrome("SAIPPUAKIVIKAUPPIAS"));
+    REQUIRE(f.checkPalindrome("Xyz, sis, zyx,"));
+    REQUIRE(f.checkPalindrome("Amore, Roma!"));
+}
+
+TEST_CASE("Test printResult", "[PalindromeFinder]") {
+    PalindromeFinder f;
+    REQUIRE(f.printResult("string", "string") == "\"string\" string");
+}
