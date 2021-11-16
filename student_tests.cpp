@@ -13,6 +13,7 @@ TEST_CASE( "Test allUnique method", "[PalindromeFinder]" )
     REQUIRE_FALSE(f.allUnique("HELLO hello"));
     REQUIRE_FALSE(f.allUnique("HELLO124 78643782hello"));
     REQUIRE_FALSE(f.allUnique("Wow 2021 Wow!!! 2022"));
+    REQUIRE_FALSE(f.allUnique("Eoa Aoe eoa"));
 }
 
 TEST_CASE("Test processString", "[PalindromeFinder]") {
@@ -24,6 +25,7 @@ TEST_CASE("Test processString", "[PalindromeFinder]") {
     REQUIRE(f.processString("hello h3ello") == "duplicated");
     REQUIRE(f.processString("a a bb a") == "aabba");
     REQUIRE(f.processString("aa aa bb a") == "duplicated");
+    REQUIRE(f.processString("Eoa Aoe eoa") == "duplicated");
 }
 
 TEST_CASE("Test isPalindrome", "[PalindromeFinder]") {
@@ -45,6 +47,10 @@ TEST_CASE("Test isPalindrome", "[PalindromeFinder]") {
 
 TEST_CASE("test checkPalindrome", "[PalindromeFinder]") {
     PalindromeFinder f;
+    REQUIRE(f.checkPalindrome(""));    // Empty string
+    REQUIRE(f.checkPalindrome("a"));   // Single character string
+    REQUIRE(f.checkPalindrome("212738"));  // Empty string after processing
+
     REQUIRE(f.checkPalindrome("Taco cat"));
     REQUIRE(f.checkPalindrome("ABBA"));
     REQUIRE_FALSE(f.checkPalindrome("ABAB"));

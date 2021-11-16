@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/Deque.hpp
+iostream
+-
+string
+-
+sstream
+-
+abstract_deque.hpp
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/abstract_deque.hpp
+Deque.txx
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/Deque.txx
+
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/Deque.txx
+Deque.hpp
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/Deque.hpp
+algorithm
+-
+iterator
+-
+
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/PalinFinderDriver.cpp
+PalindromeFinder.hpp
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/PalindromeFinder.hpp
+sstream
+-
+fstream
+-
+iostream
+-
+string.h
+-
+
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/PalindromeFinder.hpp
+Deque.hpp
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/Deque.hpp
+fstream
+-
+iostream
+-
+string
+-
+stdlib.h
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/stdlib.h
+algorithm
+-
+stdio.h
+-
+
+C:/Users/Trevl/Desktop/Projects/School/ECE 3514 - Data Structures and Algorithms/Project4.2/P4.2-3_starter/abstract_deque.hpp
+

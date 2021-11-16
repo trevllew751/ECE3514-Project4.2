@@ -58,7 +58,7 @@ string PalindromeFinder::processString(string str) const {
     std::string temp;
     std::string result;
     for (char c: str) {
-        if (isalpha(c) || isspace(c)) {
+        if (isalpha(c)) {
             temp += tolower(c);
         } else if (isspace(c) && !temp.empty()) {
             if (std::count(strings.begin(), strings.end(), temp) && temp.size() > 1) {

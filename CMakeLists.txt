@@ -18,7 +18,7 @@ set (DRIVER_SOURCE
 set(TEST_SOURCE
  student_tests.cpp)
 
-set(SOURCE ${DUQUE_SOURCE} ${FINDER_SOURCE})
+set(SOURCE ${DEQUE_SOURCE} ${FINDER_SOURCE})
 
 add_executable(student-tests catch.hpp student_catch.cpp ${SOURCE} ${TEST_SOURCE})
 add_executable(finder ${SOURCE} ${DRIVER_SOURCE})
